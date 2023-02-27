@@ -7,7 +7,8 @@ def calculate(list):
     matrix = arr.reshape((3,3))
     wynik = {
         "mean": [ matrix.mean(axis=0).tolist(), matrix.mean(1).tolist() ,matrix.mean()],
-        "variance": [np.var(matrix, 0).tolist(), np.var(matrix, 1).tolist(), np.var(matrix)]
+        "variance": [np.var(matrix, 0).tolist(), np.var(matrix, 1).tolist(), np.var(matrix)],
+        "standard deviation": [np.std(matrix, 0).tolist(), np.std(matrix, 1).tolist(), np.std(matrix)]
     }
     return wynik
 
