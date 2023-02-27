@@ -8,7 +8,10 @@ def calculate(list):
     wynik = {
         "mean": [ matrix.mean(axis=0).tolist(), matrix.mean(1).tolist() ,matrix.mean()],
         "variance": [np.var(matrix, 0).tolist(), np.var(matrix, 1).tolist(), np.var(matrix)],
-        "standard deviation": [np.std(matrix, 0).tolist(), np.std(matrix, 1).tolist(), np.std(matrix)]
+        "standard deviation": [np.std(matrix, 0).tolist(), np.std(matrix, 1).tolist(), np.std(matrix)],
+        "max": [np.max(matrix, 0).tolist(), np.max(matrix, 1).tolist(), np.max(matrix)],
+        "min": [np.min(matrix, 0).tolist(), np.min(matrix, 1).tolist(), np.min(matrix)],
+        "sum": [np.sum(matrix, 0).tolist(), np.sum(matrix, 1).tolist(), np.sum(matrix)]
     }
     return wynik
 
